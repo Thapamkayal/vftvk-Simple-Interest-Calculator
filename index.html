@@ -1,16 +1,41 @@
+
+<!DOCTYPE html>
 <html>
     <head>
+        <title>Kayalvizhy</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media='screen' href='style.css'>
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+       Interst Rate <input type="range"  id="rate" max="1" min="1" value="10.25"> 
+        <span id="rate_val"></span><br/>
+        No. of Years <select id="years"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+        <br/>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="updateRate()">Compute Interest</button>
+        <span id="rate_val"></span>
+        <div class="fi-content">
+            <span id="val1"></span><br>
+            <span id="val2"></span><br>
+            <span id="val3"></span><br>
+            <span id="val4"></span><br></div>
+        <footer>
+            &#169;This Calculator belongs to Kayalvizhy</footer>
+        </div>
     </body>
 </html>
